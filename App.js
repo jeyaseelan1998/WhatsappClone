@@ -11,6 +11,7 @@ import {COLORS} from './src/constants/colors';
 import {SIZES} from './src/constants/sizes';
 import ROOT from './ROOT';
 import ChartRoomScreen from './src/screens/ChatRoomScreen';
+import ContactsScreen from './src/screens/ContactsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -80,6 +81,8 @@ const App = () => {
             name="ChartRoomScreen"
             component={ChartRoomScreen}
           />
+          <Stack.Screen name="Contacts" component={ContactsScreen} />
+          <Stack.Screen name="NotFound" component={ContactsScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </>
